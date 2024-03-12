@@ -16,4 +16,4 @@
         
 ?>
 
-<link rel="stylesheet" href="<?php echo $_SESSION['Mode']; ?>.css">
+<link rel="stylesheet" href="CSS/<?php echo $_SESSION['Mode']; ?>.css">

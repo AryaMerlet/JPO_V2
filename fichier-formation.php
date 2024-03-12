@@ -24,7 +24,7 @@ include ("session_start.php");
 <div class="nav_hitbox">
     <nav>
         <div class="nav_container">
-            <a href="Home.php">
+            <a href="index.php">
                 <div class="button">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
@@ -72,10 +72,10 @@ include ("session_start.php");
     // I le chemin du fichier existe et  a été envoyé dans la session, alors on fait un lien de téléchargement du fichier en question sinon, on dit qu'il n'y a pas de fichier correspondant
     if ($_SESSION['chemin_fichier']) {
         echo '<a class="download-link" href="' . $_SESSION['chemin_fichier'] . '" download>Télécharger la fiche de formation</a><br /><br />';
-        echo '<a class="retour_button" href="Home.php">retour</a><br />';
+        echo '<a class="retour_button" href="index.php">retour</a><br />';
     } else {
         echo '<p class="text-error">Aucun fichier disponible pour la formation sélectionnée.</p>';
-        echo '<a class="retour_button" href="Home.php">retour</a><br />';
+        echo '<a class="retour_button" href="index.php">retour</a><br />';
     }
     ?>
     </div>
